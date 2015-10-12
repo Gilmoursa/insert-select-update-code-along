@@ -51,7 +51,7 @@ Let's add a few more cats to our table. Create a file, `01_insert_cats_into_cats
 Each `INSERT INTO` statement gets it's own line in the `.sql` file in your text editor. Each line needs to end with a `;`. Run the file with the following code in your terminal:
 
 ```bash
-pets_database.db < 01_insert_cats_into_table.sql
+pets_database.db > 01_insert_cats_into_table.sql
 ```
 
 Now, we'll learn how to `SELECT` data from a table, which will help us to confirm that we inserted the above data correctly. 
@@ -159,7 +159,7 @@ A boilerplate `UPDATE` statement looks like this:
 UPDATE [table name] SET [column name] = [new value] WHERE [column name] = [value];
 ```
 
-The `UPDATE` statement uses a `WHERE` clause to grab the row you want to update. It identifying the table name you are looking in and re-sets the data in a particular column to a new value.
+The `UPDATE` statement uses a `WHERE` clause to grab the row you want to update. It identifies the table name you are looking in and re-sets the data in a particular column to a new value.
 
 Let's update our one of our cats. Turns out Maru's friend Hannah is actually Maru's friend *Hana*. Let's update that row to change the name to the correct spelling: 
 
